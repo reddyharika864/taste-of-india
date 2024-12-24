@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odisha Famous Foods</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('odisha_culture_background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            width: 20cm;
+            height: 4cm;
+            margin: 20px auto;
+            border: 2px solid #fff;
+            border-radius: 10px;
+        }
+
+        .carousel img {
+            width: 100%;
+            border-radius: 10px;
+            animation: slide 15s infinite;
+        }
+
+        @keyframes slide {
+            0% {transform: translateX(0);}
+            20% {transform: translateX(0);}
+            25% {transform: translateX(-100%);}
+            45% {transform: translateX(-100%);}
+            50% {transform: translateX(-200%);}
+            70% {transform: translateX(-200%);}
+            75% {transform: translateX(-300%);}
+            95% {transform: translateX(-300%);}
+            100% {transform: translateX(0);}
+        }
+
+        .food-section {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #ffd700;
+            text-align: center;
+        }
+
+        .description, .ingredients, .process {
+            margin-bottom: 20px;
+        }
+
+        .ingredients ul {
+            list-style: square;
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <header>Odisha Famous Foods</header>
+
+    <div class="carousel">
+        <img src="data:image/jpeg;base64,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" alt="Pakhala Bhata">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq6A07dHUWr26pc8-yGBsrOQL0C2C1Nqs_jg&s" alt="Pakhala Bhata">
+        <img src="https://img-global.cpcdn.com/recipes/21ede15577359cf6/400x400cq70/photo.jpg" alt="Pakhala Bhata">
+        <img src="https://img-global.cpcdn.com/recipes/a6b99c62478bedc1/1200x630cq70/photo.jpg" alt="Pakhala Bhata">
+        
+    </div>
+
+    <div class="food-section">
+        <h2>Pakhala Bhata</h2>
+        <div class="description">
+            <strong>Description:</strong> A traditional fermented rice dish served with fried or mashed vegetables and fish. It is a summer staple in Odisha.
+        </div>
+        <div class="ingredients">
+            <strong>Ingredients:</strong>
+            <ul>
+                <li>Cooked rice</li>
+                <li>Water</li>
+                <li>Salt</li>
+                <li>Green chilies</li>
+                <li>Curd (optional)</li>
+            </ul>
+        </div>
+        <div class="process">
+            <strong>Making Process:</strong>
+            <p>Soak cooked rice in water overnight to ferment. Serve it cold with salt, green chilies, and optional curd. Pair it with fried vegetables or fish curry.</p>
+        </div>
+    </div>
+
+    <footer>Experience the Unique Flavors of Odisha</footer>
+</body>
+</html>
